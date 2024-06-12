@@ -1,0 +1,7 @@
+output/
+filtered_output/
+config.json
+
+__pycache__/
+*.py[cod]
+*$py.class
