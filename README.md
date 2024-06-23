@@ -13,7 +13,6 @@ Este projeto tem como objetivo minerar comentários de revisão de repositórios
 1. **Clone o repositório**:
    ```sh
    git clone https://github.com/IriedsonSouto/minerador_github.git
-   cd repositorio
    ```
 
 2. **Instale as dependências**:
