@@ -1,0 +1,12 @@
+You will be asked to create a set of 20 code review task instructions according to the model shown as an example. These task instructions will be provided to a GPT model, and we will evaluate the GPT model for completing the instructions.
+
+Here are the requirements:
+
+1. Try not to repeat the instructions to maximize diversity.
+2. Try to focus on instructions that encompass similar types of problems as presented in the example.
+3. The new instructions should be in Java language.
+4. The instructions should be in English.
+5. Ensure that the code review instructions are relevant and correct.
+6. The generated data can be applied in a fine-tuning process, so generate instructions that can be useful for such a purpose.
+
+Example to be followed:

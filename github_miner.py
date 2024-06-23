@@ -7,6 +7,7 @@ import threading
 import signal
 import sys
 import random
+import uuid
 from queue import Queue, Empty
 
 # Carregar configuração
@@ -109,11 +110,12 @@ def process_repo(owner, repo_name):
         system_message = random.choice(SYSTEM_MESSAGES)
 
         entry = {
+            "id": str(uuid.uuid4()),
             "project_name": f"{owner}/{repo_name}",
             "pull_request_url": pr_url,
             "diff_hunk": cleaned_diff_hunk,
             "comments": comment_body,
-            "prompt": f"<s>[INST] <<SYS>>\n{system_message}\n<</SYS>>{cleaned_diff_hunk} [/INST]{comment_body} </s>"
+            "prompt": f"<s>[INST] <<SYS>>{system_message}<</SYS>>{cleaned_diff_hunk}[/INST]{comment_body}</s>"
         }
         data.append(entry)
 
